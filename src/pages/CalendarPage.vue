@@ -29,7 +29,8 @@ export default {
   setup() {
     const state = reactive({
       date: '',
-      url: ''
+      url: '',
+      desc: ''
     })
     return {
       state,

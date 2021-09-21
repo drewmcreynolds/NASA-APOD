@@ -13,6 +13,7 @@ class NasaService {
     const res = await nasaApi.get(`?${apiKey}&date=${query}`)
     logger.log('the res', res.data)
     AppState.apod = res.data
+    AppState.desc = res.data.explanation
   }
 }
 

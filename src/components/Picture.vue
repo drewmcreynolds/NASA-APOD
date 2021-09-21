@@ -1,6 +1,6 @@
 <template>
   <div class="card p-3 bg-success">
-    <h1 class=""></h1>
+    <p>{{ desc }}</p>
     <img :src="apod.hdurl" alt="" class="rounded elevation-4 image-fluid">
   </div>
 </template>
@@ -11,7 +11,8 @@ import { AppState } from '../AppState.js'
 export default {
   setup() {
     return {
-      apod: computed(() => AppState.apod)
+      apod: computed(() => AppState.apod),
+      desc: computed(() => AppState.desc)
     }
   }
 }
