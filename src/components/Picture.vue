@@ -1,10 +1,7 @@
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <img :src="apod.hdurl" alt="" class="rounded">
-      </div>
-    </div>
+  <div class="card p-3 bg-success">
+    <h1 class=""></h1>
+    <img :src="apod.hdurl" alt="" class="rounded elevation-4 image-fluid">
   </div>
 </template>
 

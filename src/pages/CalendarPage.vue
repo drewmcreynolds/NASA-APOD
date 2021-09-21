@@ -1,12 +1,24 @@
 <template>
-  <h1>Calendar</h1>
-  <form @submit="findPictureByDate">
-    <input type="date" id="Test_Date" v-model="state.date" />
-    <button type="submit" class="btn btn-success">
-      submit
-    </button>
-  </form>
-  <Picture />
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 text-center">
+        <h1 class="text-center">
+          Calendar
+        </h1>
+        <form @submit="findPictureByDate">
+          <input type="date" id="Test_Date" v-model="state.date" />
+          <button type="submit" class="btn btn-success">
+            submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="row m-3">
+      <div class="col-lg-8 text-center">
+        <Picture />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
